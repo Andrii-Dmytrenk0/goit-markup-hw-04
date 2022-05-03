@@ -507,6 +507,7 @@ flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .social-footer{
   width: 44px;
@@ -516,15 +517,16 @@ flex-grow: 1;
   justify-content: center;
   align-items: center;
 
-  margin-right: 10px;
-  margin-top: 20px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: var(--h1-text-color)
 }
-/* .social-footer:last-child{
+.item-list-footer{
+  margin-right: 10px;
+}
+.item-list-footer:last-child{
   margin-right: 0px;
-} */
+}
 .social-footer:hover,
 .social-footer:focus{
     background-color: var(--acent-color);
