@@ -48,6 +48,9 @@ img{
 button{
   border: 1px solid transparent;
 }
+a{
+  text-decoration: none;
+}
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
 /* цвет для h1 #FFFFFF */
@@ -498,6 +501,7 @@ flex-grow: 1;
   align-items: baseline;
   flex-direction: column;
   justify-content: baseline;
+  flex-grow: 8;
 }
 .social-list-footer{
   display: flex;
@@ -514,40 +518,19 @@ flex-grow: 1;
 
   margin-right: 10px;
   margin-top: 20px;
-  background-color: #F5F4FA;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  fill: var(--h1-text-color)
 }
-.social-footer:last-child{
+/* .social-footer:last-child{
   margin-right: 0px;
-}
-}
-/* .social-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-elements {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-  margin-right: 10px;
-  fill: #AFB1B8;
-}
-
-.social-elements:last-child {
-  margin-right: 0;
-}
-
-.social-elements:hover,
-.social-elements:focus {
-  background-color: #2196f3;
-  border-radius: 50%;
-  fill: #F5F4FA;
 } */
+.social-footer:hover,
+.social-footer:focus{
+    background-color: var(--acent-color);
+    border-radius: 50%;
+    fill: var(--h1-text-color)
+}
 /* portfolio */
 /* button */
 .button-filter {
@@ -569,6 +552,9 @@ flex-grow: 1;
 .button-filter:focus {
   background-color: var(--acent-color);
   color: var(--h1-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-list{
   display: flex;
@@ -619,4 +605,8 @@ flex-grow: 1;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
 }
-
+.filter-link:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
